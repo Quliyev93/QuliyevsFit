@@ -1,0 +1,642 @@
+[
+    {
+        "foodName": "Toyuq filesi",
+        "calories": 160,
+        "protein": 28,
+        "carbohydrate": 0,
+        "oil": 3.6,
+        "sugar": 0
+    },
+    {
+        "foodName": "Toyuq budu",
+        "calories": 196,
+        "protein": 19,
+        "carbohydrate": 0,
+        "oil": 10,
+        "sugar": 0
+    },
+    {
+        "foodName": "Toyuq qanadı",
+        "calories": 210,
+        "protein": 16,
+        "carbohydrate": 0,
+        "oil": 12,
+        "sugar": 0
+    },
+    {
+        "foodName": "Mal əti",
+        "calories": 258,
+        "protein": 25.8,
+        "carbohydrate": 0,
+        "oil": 14,
+        "sugar": 0
+    },
+    {
+        "foodName": "Donuz əti",
+        "calories": 364,
+        "protein": 22,
+        "carbohydrate": 0,
+        "oil": 30,
+        "sugar": 0
+    },
+    {
+        "foodName": "Quzu əti",
+        "calories": 243,
+        "protein": 22,
+        "carbohydrate": 0,
+        "oil": 18,
+        "sugar": 0
+    },
+    {
+        "foodName": "Dana əti",
+        "calories": 140,
+        "protein": 30,
+        "carbohydrate": 0,
+        "oil": 1,
+        "sugar": 0
+    },
+    {
+        "foodName": "Dovşan əti",
+        "calories": 170,
+        "protein": 24,
+        "carbohydrate": 0,
+        "oil": 12,
+        "sugar": 0
+    },
+    {
+        "foodName": "Katlet",
+        "calories": 105,
+        "protein": 19,
+        "carbohydrate": 0,
+        "oil": 2.4,
+        "sugar": 0
+    },
+    {
+        "foodName": "Hinduşka əti",
+        "calories": 220,
+        "protein": 29,
+        "carbohydrate": 0,
+        "oil": 13,
+        "sugar": 0
+    },
+    {
+        "foodName": "Ördək əti",
+        "calories": 348,
+        "protein": 21,
+        "carbohydrate": 0,
+        "oil": 61,
+        "sugar": 0
+    },
+    {
+        "foodName": "Qoyun əti",
+        "calories": 250,
+        "protein": 25,
+        "carbohydrate": 0,
+        "oil": 17,
+        "sugar": 0
+    },
+    {
+        "foodName": "Qaz əti",
+        "calories": 360,
+        "protein": 23,
+        "carbohydrate": 0,
+        "oil": 33,
+        "sugar": 0
+    },
+    {
+        "foodName": "Kolbasa",
+        "calories": 452,
+        "protein": 13,
+        "carbohydrate": 3,
+        "oil": 40.8,
+        "sugar": 0
+    },
+    {
+        "foodName": "Sosis",
+        "calories": 329,
+        "protein": 11,
+        "carbohydrate": 3,
+        "oil": 29.6,
+        "sugar": 0
+    },
+    {
+        "foodName": "Balıqlar (ortalama)",
+        "calories": 150,
+        "protein": 22,
+        "carbohydrate": 0,
+        "oil": 10,
+        "sugar": 0
+    },
+    {
+        "foodName": "Yumurta",
+        "calories": 70,
+        "protein": 6,
+        "carbohydrate": 1,
+        "oil": 5,
+        "sugar": 0
+    },
+    {
+        "foodName": "Yulaf",
+        "calories": 380,
+        "protein": 14,
+        "carbohydrate": 66,
+        "oil": 7,
+        "sugar": 0
+    },
+    {
+        "foodName": "Düyü",
+        "calories": 130,
+        "protein": 3.4,
+        "carbohydrate": 28,
+        "oil": 0.3,
+        "sugar": 0
+    },
+    {
+        "foodName": "Bulqur",
+        "calories": 83,
+        "protein": 3.1,
+        "carbohydrate": 19,
+        "oil": 0.4,
+        "sugar": 0
+    },
+    {
+        "foodName": "Qarabaşaq",
+        "calories": 120,
+        "protein": 4.1,
+        "carbohydrate": 21.6,
+        "oil": 1.9,
+        "sugar": 0
+    },
+    {
+        "foodName": "Makaron",
+        "calories": 135,
+        "protein": 5,
+        "carbohydrate": 25,
+        "oil": 1,
+        "sugar": 0
+    },
+    {
+        "foodName": "Qarğıdalı",
+        "calories": 106,
+        "protein": 3.2,
+        "carbohydrate": 19,
+        "oil": 2,
+        "sugar": 6.3
+    },
+    {
+        "foodName": "Peçenya",
+        "calories": 415,
+        "protein": 3,
+        "carbohydrate": 65,
+        "oil": 13.5,
+        "sugar": 21
+    },
+    {
+        "foodName": "Ağ çörək",
+        "calories": 269,
+        "protein": 7,
+        "carbohydrate": 47,
+        "oil": 4,
+        "sugar": 5
+    },
+    {
+        "foodName": "Qara çörək",
+        "calories": 233,
+        "protein": 9,
+        "carbohydrate": 42,
+        "oil": 3.5,
+        "sugar": 3
+    },
+    {
+        "foodName": "kəsmik (ortalama)",
+        "calories": 101,
+        "protein": 13,
+        "carbohydrate": 3.6,
+        "oil": 4.3,
+        "sugar": 3
+    },
+    {
+        "foodName": "Xama 10%",
+        "calories": 135,
+        "protein": 2.5,
+        "carbohydrate": 3,
+        "oil": 10,
+        "sugar": 2.9
+    },
+    {
+        "foodName": "Süd 1%",
+        "calories": 40,
+        "protein": 2,
+        "carbohydrate": 4.6,
+        "oil": 2.5,
+        "sugar": 5
+    },
+    {
+        "foodName": "Qatıq",
+        "calories": 40,
+        "protein": 3,
+        "carbohydrate": 3,
+        "oil": 1,
+        "sugar": 3.8
+    },
+    {
+        "foodName": "Qaymaq",
+        "calories": 135,
+        "protein": 5,
+        "carbohydrate": 25,
+        "oil": 1,
+        "sugar": 3
+    },
+    {
+        "foodName": "Meyvəli yoqurt",
+        "calories": 85,
+        "protein": 5,
+        "carbohydrate": 0,
+        "oil": 3,
+        "sugar": 8.5
+    },
+    {
+        "foodName": "Meyvəsiz yoqurt",
+        "calories": 60,
+        "protein": 4,
+        "carbohydrate": 0,
+        "oil": 2,
+        "sugar": 6.2
+    },
+    {
+        "foodName": "Yağ",
+        "calories": 660,
+        "protein": 1.1,
+        "carbohydrate": 0,
+        "oil": 73,
+        "sugar": 2
+    },
+    {
+        "foodName": "Ağ pendir",
+        "calories": 260,
+        "protein": 17,
+        "carbohydrate": 2,
+        "oil": 23,
+        "sugar": 1
+    },
+    {
+        "foodName": "Sarı pendir",
+        "calories": 360,
+        "protein": 20,
+        "carbohydrate": 1.5,
+        "oil": 29,
+        "sugar": 1.5
+    },
+    {
+        "foodName": "Yaşıl lobya",
+        "calories": 43,
+        "protein": 3,
+        "carbohydrate": 10,
+        "oil": 0.4,
+        "sugar": 3
+    },
+    {
+        "foodName": "Quru lobya",
+        "calories": 127,
+        "protein": 11,
+        "carbohydrate": 22,
+        "oil": 0.8,
+        "sugar": 1
+    },
+    {
+        "foodName": "Noxud",
+        "calories": 164,
+        "protein": 9,
+        "carbohydrate": 27,
+        "oil": 2.6,
+        "sugar": 0.3
+    },
+    {
+        "foodName": "Yaşıl bibər",
+        "calories": 25,
+        "protein": 1.2,
+        "carbohydrate": 5.7,
+        "oil": 0.2,
+        "sugar": 2
+    },
+    {
+        "foodName": "Quru mərci",
+        "calories": 353,
+        "protein": 23.7,
+        "carbohydrate": 65.4,
+        "oil": 1.5,
+        "sugar": 2
+    },
+    {
+        "foodName": "Mərci supu",
+        "calories": 89,
+        "protein": 4,
+        "carbohydrate": 16,
+        "oil": 3,
+        "sugar": 1.5
+    },
+    {
+        "foodName": "Pomidor",
+        "calories": 25,
+        "protein": 0.9,
+        "carbohydrate": 3.9,
+        "oil": 0.2,
+        "sugar": 2.6
+    },
+    {
+        "foodName": "Xiyar",
+        "calories": 12,
+        "protein": 0.7,
+        "carbohydrate": 3.6,
+        "oil": 0.1,
+        "sugar": 1.7
+    },
+    {
+        "foodName": "Kahı",
+        "calories": 14,
+        "protein": 1,
+        "carbohydrate": 2,
+        "oil": 0.2,
+        "sugar": 0.8
+    },
+    {
+        "foodName": "Kök",
+        "calories": 41,
+        "protein": 0.9,
+        "carbohydrate": 9.6,
+        "oil": 0.2,
+        "sugar": 4.7
+    },
+    {
+        "foodName": "Kələm",
+        "calories": 24,
+        "protein": 1.4,
+        "carbohydrate": 5.3,
+        "oil": 0.2,
+        "sugar": 3.1
+    },
+    {
+        "foodName": "Göbələk",
+        "calories": 22,
+        "protein": 3.1,
+        "carbohydrate": 3.3,
+        "oil": 0.3,
+        "sugar": 1.5
+    },
+    {
+        "foodName": "Kartof",
+        "calories": 82,
+        "protein": 2,
+        "carbohydrate": 19.5,
+        "oil": 0.1,
+        "sugar": 0.8
+    },
+    {
+        "foodName": "Badımcan",
+        "calories": 24,
+        "protein": 1.1,
+        "carbohydrate": 5.5,
+        "oil": 0.2,
+        "sugar": 3.2
+    },
+    {
+        "foodName": "Yaşıl soğan",
+        "calories": 46,
+        "protein": 1.4,
+        "carbohydrate": 8.9,
+        "oil": 0.2,
+        "sugar": 2.3
+    },
+    {
+        "foodName": "Baş soğan",
+        "calories": 41,
+        "protein": 1.5,
+        "carbohydrate": 7.3,
+        "oil": 0.2,
+        "sugar": 2.5
+    },
+    {
+        "foodName": "Alma",
+        "calories": 52,
+        "protein": 0.3,
+        "carbohydrate": 13.2,
+        "oil": 0.2,
+        "sugar": 10.7
+    },
+    {
+        "foodName": "Armud",
+        "calories": 57,
+        "protein": 0.4,
+        "carbohydrate": 15.2,
+        "oil": 0.1,
+        "sugar": 9.8
+    },
+    {
+        "foodName": "Ananas",
+        "calories": 50,
+        "protein": 0.5,
+        "carbohydrate": 13.1,
+        "oil": 0.1,
+        "sugar": 9.9
+    },
+    {
+        "foodName": "Banan",
+        "calories": 89,
+        "protein": 1.2,
+        "carbohydrate": 22.8,
+        "oil": 0.3,
+        "sugar": 12.2
+    },
+    {
+        "foodName": "Gilas",
+        "calories": 50,
+        "protein": 1,
+        "carbohydrate": 12,
+        "oil": 0.3,
+        "sugar": 8
+    },
+    {
+        "foodName": "Çiyələk",
+        "calories": 32,
+        "protein": 0.7,
+        "carbohydrate": 7.7,
+        "oil": 0.3,
+        "sugar": 4.9
+    },
+    {
+        "foodName": "Tut",
+        "calories": 63,
+        "protein": 2.5,
+        "carbohydrate": 9.6,
+        "oil": 0.4,
+        "sugar": 8
+    },
+    {
+        "foodName": "Xurma",
+        "calories": 277,
+        "protein": 1.8,
+        "carbohydrate": 76,
+        "oil": 0.2,
+        "sugar": 63
+    },
+    {
+        "foodName": "Əncir",
+        "calories": 74,
+        "protein": 0.8,
+        "carbohydrate": 19,
+        "oil": 0.4,
+        "sugar": 16
+    },
+    {
+        "foodName": "Ərik",
+        "calories": 46,
+        "protein": 0.7,
+        "carbohydrate": 11.4,
+        "oil": 0.3,
+        "sugar": 9.9
+    },
+    {
+        "foodName": "Qarpız",
+        "calories": 30,
+        "protein": 0.6,
+        "carbohydrate": 7.6,
+        "oil": 0.2,
+        "sugar": 6.6
+    },
+    {
+        "foodName": "Yemiş",
+        "calories": 33,
+        "protein": 0.7,
+        "carbohydrate": 8,
+        "oil": 0.2,
+        "sugar": 5.6
+    },
+    {
+        "foodName": "Kişmiş",
+        "calories": 299,
+        "protein": 2.9,
+        "carbohydrate": 79,
+        "oil": 0.5,
+        "sugar": 59
+    },
+    {
+        "foodName": "Limon",
+        "calories": 29,
+        "protein": 1.1,
+        "carbohydrate": 9.3,
+        "oil": 0.3,
+        "sugar": 2.5
+    },
+    {
+        "foodName": "Mandarin",
+        "calories": 53,
+        "protein": 1.8,
+        "carbohydrate": 13.3,
+        "oil": 0.3,
+        "sugar": 10.6
+    },
+    {
+        "foodName": "Portağal",
+        "calories": 47,
+        "protein": 0.9,
+        "carbohydrate": 11.8,
+        "oil": 0.1,
+        "sugar": 9.4
+    },
+    {
+        "foodName": "Nar",
+        "calories": 83,
+        "protein": 1.7,
+        "carbohydrate": 18.6,
+        "oil": 1.2,
+        "sugar": 16.2
+    },
+    {
+        "foodName": "Üzüm",
+        "calories": 69,
+        "protein": 0.7,
+        "carbohydrate": 18.1,
+        "oil": 0.2,
+        "sugar": 15
+    },
+    {
+        "foodName": "Şaftalı",
+        "calories": 39,
+        "protein": 0.9,
+        "carbohydrate": 9.6,
+        "oil": 0.3,
+        "sugar": 8.4
+    },
+    {
+        "foodName": "Badam",
+        "calories": 589,
+        "protein": 19.2,
+        "carbohydrate": 21,
+        "oil": 53,
+        "sugar": 3.9
+    },
+    {
+        "foodName": "Qoz",
+        "calories": 664,
+        "protein": 15.3,
+        "carbohydrate": 13.7,
+        "oil": 65.2,
+        "sugar": 2.6
+    },
+    {
+        "foodName": "Püstə",
+        "calories": 577,
+        "protein": 25.5,
+        "carbohydrate": 16.2,
+        "oil": 48.2,
+        "sugar": 3.8
+    },
+    {
+        "foodName": "Fındıq",
+        "calories": 628,
+        "protein": 13.9,
+        "carbohydrate": 16.8,
+        "oil": 60,
+        "sugar": 4.2
+    },
+    {
+        "foodName": "Fıstıq",
+        "calories": 610,
+        "protein": 26,
+        "carbohydrate": 18,
+        "oil": 49,
+        "sugar": 3.8
+    },
+    {
+        "foodName": "Balqabaq tumu",
+        "calories": 562,
+        "protein": 30,
+        "carbohydrate": 11,
+        "oil": 50,
+        "sugar": 1.4
+    },
+    {
+        "foodName": "Ayran",
+        "calories": 44,
+        "protein": 2.5,
+        "carbohydrate": 5,
+        "oil": 1.2,
+        "sugar": 4.5
+    },
+    {
+        "foodName": "Qəhvə",
+        "calories": 2,
+        "protein": 0.5,
+        "carbohydrate": 0.3,
+        "oil": 0,
+        "sugar": 0
+    },
+    {
+        "foodName": "Qazlı içkilər",
+        "calories": 50,
+        "protein": 0,
+        "carbohydrate": 12,
+        "oil": 0,
+        "sugar": 11
+    }
+]
