@@ -8,6 +8,7 @@ const totalProtein = document.getElementById("totalProtein");
 const totalCarbohydrate = document.getElementById("totalCarbohydrate");
 const totalOil = document.getElementById("totalOil");
 const totalSugar = document.getElementById("totalSugar");
+const resetValuesBtn = document.getElementById("resetValues")
 
 
 function getFetchFood() {
@@ -54,6 +55,17 @@ function addFood(foodName, calories, protein, carbohydrate, oil, sugar) {
 
 }
 
+if (resetValuesBtn) {
+    resetValuesBtn.addEventListener("click", () => {
+        totalCalories.textContent = "Toplam Kalori: 0kal";
+        totalProtein.textContent = "Toplam Zülal: 0qr";
+        totalCarbohydrate.textContent = "Toplam Karbonhidrat: 0qr";
+        totalOil.textContent = "Toplam Yağ: 0qr";
+        totalSugar.textContent = "Toplam Şəkər: 0qr";
+        cartList.textContent = "";
+        cartItems.length = 0;
+    })
+}
 
 if (generalCalculateBtn) {
     generalCalculateBtn.addEventListener("click", () => {
