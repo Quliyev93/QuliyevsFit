@@ -1,16 +1,15 @@
-const $ = (id) => document.getElementById(id);
 
 
-const inputAgeElement = $("inputAge");
-const inputHeightElement = $("inputHeight");
-const inputWeightElement = $("inputWeight");
-const workActivityElement = $("workActivity")
-const submitBtn = $("submit");
-const resetBtn = $("reset");
-const resultCalorieElement = $("resultCalorie");
-const resultWeightElement = $("resultWeight");
-const resultProteinElement = $("resultProtein");
-const resultCarbElement = $("resultCarb")
+const inputAgeElement = document.getElementById("inputAge");
+const inputHeightElement = document.getElementById("inputHeight");
+const inputWeightElement = document.getElementById("inputWeight");
+const workActivityElement = document.getElementById("workActivity")
+const submitBtn = document.getElementById("submit");
+const resetBtn = document.getElementById("reset");
+const resultCalorieElement = document.getElementById("resultCalorie");
+const resultWeightElement = document.getElementById("resultWeight");
+const resultProteinElement = document.getElementById("resultProtein");
+const resultCarbElement = document.getElementById("resultCarb")
 const genders = document.querySelectorAll('input[name="gender"]');
 const aims = document.querySelectorAll('input[name="aim"]');
 
@@ -123,36 +122,45 @@ let resultWeight = 0;
 
 
 function bestWeight() {
-    HeightValueMain = inputHeightElement.value / 100;
 
-    resultWeight = inputWeightElement.value / (HeightValueMain * HeightValueMain);
+    let height = parseFloat(inputHeightElement.value);
+    let weight = parseFloat(inputWeightElement.value);
+
+    if (isNaN(height) || isNaN(weight) || height <= 0 || weight <= 0) {
+        resultWeightElement.innerText = "Xahiş olunur düzgün dəyərlər daxil edin!";
+        return;
+    }
+
+    HeightValueMain = parseFloat(inputHeightElement.value) / 100;
+
+    resultWeight = parseFloat(inputWeightElement.value) / (HeightValueMain * HeightValueMain);
 
     if (resultWeight < 18.5) {
         resultWeightElement.innerText = `Arıqsan 
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
         İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
-    } else if (resultWeight >= 18.5 && resultWeight < 21) {
+    } else if (resultWeight >= 18.5 && resultWeight <= 23) {
         resultWeightElement.innerText = ` Normalsan
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
          İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
-    } else if (resultWeight >= 22 && resultWeight <= 24) {
+    } else if (resultWeight > 23 && resultWeight <= 24) {
         resultWeightElement.innerText = `İdealsan
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
          İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
-    } else if (resultWeight >= 23 && resultWeight < 25) {
+    } else if (resultWeight > 24 && resultWeight <= 25) {
         resultWeightElement.innerText = `Normalsan
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
          İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
-    } else if (resultWeight >= 25 && resultWeight <= 29.99) {
-        resultWeightElement.innerText = `Biraz köksən
+    } else if (resultWeight > 25 && resultWeight <= 29.99) {
+        resultWeightElement.innerText = `Artıq kilolusan
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
          İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
-    } else if (resultWeight >= 30 && resultWeight <= 39.99) {
-        resultWeightElement.innerText = `Köksən 
+    } else if (resultWeight >= 30 && resultWeight <= 35) {
+        resultWeightElement.innerText = `Çox kilolusan 
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
          İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
-    } else if (resultWeight >= 40) {
-        resultWeightElement.innerText = `Obezsən(Kutarmısan)
+    } else if (resultWeight > 35) {
+        resultWeightElement.innerText = `Obezsən
         Normal kilo aralığı = (${Math.round(19 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(25 * (HeightValueMain * HeightValueMain))} kg)
          İdeal kilo aralığı = (${Math.round(23 * (HeightValueMain * HeightValueMain))} kg - ${Math.round(24 * (HeightValueMain * HeightValueMain))} kg)`
     }

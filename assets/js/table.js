@@ -1,9 +1,8 @@
-const $ = (id) => document.getElementById(id);
 
-const tbodyElement = $("tbody");
-const searchInputElement = $("searchInput");
-const cartList = $("cartList");
-const generalCalculateBtn = $("generalCalculate");
+const tbodyElement = document.getElementById("tbody");
+const searchInputElement = document.getElementById("searchInput");
+const cartList = document.getElementById("cartList");
+const generalCalculateBtn = document.getElementById("generalCalculate");
 const totalCalories = document.getElementById("totalCalories");
 const totalProtein = document.getElementById("totalProtein");
 const totalCarbohydrate = document.getElementById("totalCarbohydrate");
@@ -15,10 +14,11 @@ function getFetchFood() {
     fetch("../js/food.json")
         .then(res => res.json())
         .then(data => {
-            data.forEach(element => {
-                const row = document.createElement("tr");
-                row.classList.add("food-row");
-                row.innerHTML += `    
+            if (tbodyElement) {
+                data.forEach(element => {
+                    const row = document.createElement("tr");
+                    row.classList.add("food-row");
+                    row.innerHTML += `    
                 <tr>
                     <td>${element.foodName}</td>
                     <td>${element.calories}</td>
@@ -33,8 +33,9 @@ function getFetchFood() {
                             
                     </td>
                 </tr>`
-                tbodyElement.appendChild(row);
-            })
+                    tbodyElement.appendChild(row);
+                })
+            }
 
         })
 
@@ -54,42 +55,48 @@ function addFood(foodName, calories, protein, carbohydrate, oil, sugar) {
 }
 
 
+if (generalCalculateBtn) {
+    generalCalculateBtn.addEventListener("click", () => {
+        let totalCaloriesValue = 0;
+        let totalProteinValue = 0;
+        let totalCarbohydrateValue = 0;
+        let totalOilValue = 0;
+        let totalSugarValue = 0;
 
-generalCalculateBtn.addEventListener("click", () => {
-    let totalCaloriesValue = 0;
-    let totalProteinValue = 0;
-    let totalCarbohydrateValue = 0;
-    let totalOilValue = 0;
-    let totalSugarValue = 0;
+        cartItems.forEach(item => {
+            totalCaloriesValue += item.calories;
+            totalProteinValue += item.protein;
+            totalCarbohydrateValue += item.carbohydrate;
+            totalOilValue += item.oil;
+            totalSugarValue += item.sugar;
+        });
 
-    cartItems.forEach(item => {
-        totalCaloriesValue += item.calories;
-        totalProteinValue += item.protein;
-        totalCarbohydrateValue += item.carbohydrate;
-        totalOilValue += item.oil;
-        totalSugarValue += item.sugar;
+        totalCalories.textContent = `Toplam Kalori: ${totalCaloriesValue}kal`;
+        totalProtein.textContent = `Toplam Zülal: ${totalProteinValue}qr`;
+        totalCarbohydrate.textContent = `Toplam Karbonhidrat: ${totalCarbohydrateValue}qr`;
+        totalOil.textContent = `Toplam Yağ: ${totalOilValue}qr`;
+        totalSugar.textContent = `Toplam Şəkər: ${totalSugarValue}qr`;
     });
-
-    totalCalories.textContent = `Toplam Kalori: ${totalCaloriesValue}kal`;
-    totalProtein.textContent = `Toplam Zülal: ${totalProteinValue}qr`;
-    totalCarbohydrate.textContent = `Toplam Karbonhidrat: ${totalCarbohydrateValue}qr`;
-    totalOil.textContent = `Toplam Yağ: ${totalOilValue}qr`;
-    totalSugar.textContent = `Toplam Şəkər: ${totalSugarValue}qr`;
-});
+}
 
 
-searchInput.addEventListener("keyup", function () {
-    const searchTerm = searchInput.value.toLowerCase();
+document.addEventListener("DOMContentLoaded", function () {
 
-    const rows = document.querySelectorAll(".food-row");
-    rows.forEach(row => {
-        const foodName = row.cells[0].textContent.toLowerCase();
-        if (foodName.includes(searchTerm)) {
-            row.style.display = "";
-        } else {
-            row.style.display = "none";
-        }
-    });
+    if (searchInputElement) {
+        searchInputElement.addEventListener("keyup", function () {
+            const searchTerm = searchInputElement.value.toLowerCase();
+
+            const rows = document.querySelectorAll(".food-row");
+            rows.forEach(row => {
+                const foodName = row.cells[0].textContent.toLowerCase();
+                if (foodName.includes(searchTerm)) {
+                    row.style.display = "";
+                } else {
+                    row.style.display = "none";
+                }
+            });
+        });
+    }
 });
 
 
