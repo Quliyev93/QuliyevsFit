@@ -8,7 +8,8 @@ const totalProtein = document.getElementById("totalProtein");
 const totalCarbohydrate = document.getElementById("totalCarbohydrate");
 const totalOil = document.getElementById("totalOil");
 const totalSugar = document.getElementById("totalSugar");
-const resetValuesBtn = document.getElementById("resetValues")
+const resetValuesBtn = document.getElementById("resetValues");
+const showModal = document.getElementById("show")
 
 
 function getFetchFood() {
@@ -64,6 +65,7 @@ if (resetValuesBtn) {
         totalSugar.textContent = "Toplam Şəkər: 0qr";
         cartList.textContent = "";
         cartItems.length = 0;
+        cartList.classList.remove("active_list")
     })
 }
 
@@ -111,6 +113,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+
+showModal.addEventListener("click", () => {
+    const cartListHeight = parseInt(window.getComputedStyle(cartList).height, 10);
+
+    if (cartListHeight >= 100) {
+        cartList.classList.toggle("active_list");
+    }
+})
 
 getFetchFood();
 
